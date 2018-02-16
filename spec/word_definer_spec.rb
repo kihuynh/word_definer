@@ -3,7 +3,7 @@ require('word_definer')
 require('pry')
 
 describe('word_definer') do
-  it("create new project") do
-  expect().to(eq())
+  it("will have an empty array to start") do
+  expect(Word.all()).to(eq([]))
    end
 end
