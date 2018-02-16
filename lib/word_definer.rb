@@ -17,4 +17,8 @@ class Word
   def save()
     @@list.push(self)
   end
+
+  def self.clear
+    @@list = []
+  end
 end
