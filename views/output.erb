@@ -1,13 +1,27 @@
-<a href="/"> Return To List</a>
-  <h3><%= @vocab.word %></h3>
-    <p><%= @vocab.word_def %></p>
-<button type="click" name="button" class="btn btn-info" id="output-button">Add another definition to this word!</button>
+<a href="/"><button class="btn btn-default"> Return To List</button></a>
+<div class="def">
 
-<div id="extra_definition">
-  <form action="/" method="post">
-    <div class="form-group">
-      <label for="extra">Add another definition to your word</label>
-      <input name="extra" class="form-control" >
+  <h3><%= @vocab.word %></h3>
+  <h4><%= @vocab.word_def %></h4>
+  <button type="click" name="button" class="btn btn-info" id="output-button">Add another definition to this word!</button>
+</div>
+<div class="container">
+  <div id="extra_definition">
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+      <div class='col-md-6'>
+        <form action="/" method="post">
+          <div class="form-group">
+            <label for="extra">Add additional definition to your word</label>
+            <input name="extra" class="form-control" >
+          </div>
+          <button type="button" name="button" class="btn btn-info">Add!</button>
+        </form>
+      </div>
+      <div class="col-md-3">
+      </div>
     </div>
-  </form>
+
+  </div>
 </div>

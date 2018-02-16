@@ -1,10 +1,15 @@
-h3 {
+#output-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#word-list {
   text-align: center;
 }
+
 #extra_definition {
   display: none;
 }
-
-body{
-  background-color: lightsalmon;
+.def {
+  text-align: center;
 }
