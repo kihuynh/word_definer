@@ -1,6 +1,6 @@
 # Word Definer
 
-#### Ruby application for anagrams and antigrams, 2/16/2018
+#### Ruby application to input words with their definitions. , 2/16/2018
 
 #### By Kim Huynh
 

@@ -10,8 +10,10 @@ describe('word_definer') do
   end
 
   describe('save')do
-    it('will save an inputted word into list')do
-      expect(Word.save()).to(eq([word]))
+    it('will save inputted word into list')do
+      vocab = Word.new(:word => "Spleen")
+      vocab.save()
+      expect(Word.all()).to(eq([vocab]))
     end
   end
 end
