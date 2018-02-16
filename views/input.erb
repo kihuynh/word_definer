@@ -2,7 +2,7 @@
 <h3>Enter Some Words To Help You Study</h3>
 <div class="form_div">
   <div class="container">
-    <form>
+    <form action="/" method="post">
       <div class="form-group">
         <label for="word">Enter word</label>
         <input name="word" class="form-control" type="text">
@@ -17,8 +17,8 @@
 </div>
 <h2>Your Word List</h2>
 <!-- Ruby things here to take inputs and list them -->
+<% @list.each do |item| %>
+<p><a href="/output/"> <%= item.word %></a> </p>
+<% end %>
 <!-- Essentially everything  -->
 <!-- Try @@ first to see if functional -->
-<% @@list.each do |vocab| %>
-  <p> <%= vocab.word %> </p>
-<% end %>

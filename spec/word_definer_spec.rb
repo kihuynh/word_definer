@@ -3,7 +3,9 @@ require('word_definer')
 require('pry')
 
 describe('word_definer') do
-
+  before() do
+    Word.clear()
+  end
 
   describe('.all') do
     it('will check if the array is empty') do
