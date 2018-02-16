@@ -15,7 +15,7 @@ class Word
     @@list
   end
 
-  def save()
+  def save
     @@list.push(self)
   end
 
