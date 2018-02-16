@@ -26,6 +26,6 @@
 <div class="container" id="word-list">
   <h2 id="list-title">Your Word List</h2>
   <% @list.each do |vocab| %>
-    <p><a href="/output/<%= vocab.id %>"><%= vocab.word %></a> </p>
+    <p><a href="/output/<%= vocab.id %>" class="link"><%= vocab.word %></a> </p>
   <% end %>
 </div

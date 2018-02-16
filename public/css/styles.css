@@ -13,3 +13,12 @@
 .def {
   text-align: center;
 }
+
+body {
+  background-color: #d1f1fd;
+}
+
+.link {
+  font-size: 20px;
+  text-decoration: none;
+}
