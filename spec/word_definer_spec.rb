@@ -13,7 +13,7 @@ describe('word_definer') do
 
   describe('save') do
     it('will save inputted word into list')do
-      vocab = Word.new(:word => "Spleen")
+      vocab = Word.new(:word => "Spleen", :word_def => "organ")
       vocab.save()
       expect(Word.all()).to(eq([vocab]))
     end
@@ -21,7 +21,7 @@ describe('word_definer') do
 
   describe('clear') do
     it('will clear out the array after saving inputs. prevent duplicates in the array?') do
-    vocab = Word.new(:word => "Justice")
+    vocab = Word.new(:word => "Justice", :word_def => "law word")
     vocab.save()
     Word.clear()
     expect(Word.all()).to(eq([]))

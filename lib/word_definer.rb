@@ -3,10 +3,11 @@
 class Word
   @@list = []
 
-  attr_accessor :word
+  attr_accessor :word, :word_def
 
   def initialize(attributes)
     @word = attributes.fetch(:word)
+    @word_def = attributes.fetch(:word_def)
 
   end
 
