@@ -17,7 +17,7 @@ post('/') do
   erb(:input)
 end
 
-get('/output/') do
-  @list
+get('/output/:id') do
+  @vocab = Word.find(params[:id])
   erb(:output)
 end

@@ -32,9 +32,12 @@ describe('word_definer') do
 
   describe('find') do
     it('will find the word to output') do
-      vocab = Word.new(:word => "Apple", :word_def => "pie")
+      vocab = Word.new({:word => "Apple", :word_def => "pie"})
       vocab.save()
+      vocab2 = Word.new({:word => "work", :word_def => "please"})
+      vocab2.save()
       expect(Word.find(1)).to(eq(vocab))
+      expect(Word.find(2)).to(eq(vocab2))
     end
   end
 end
