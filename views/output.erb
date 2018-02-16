@@ -1,4 +1,13 @@
-<h3><%= @vocab.word %></h3>
-  <p><%= @vocab.word_def %></p>
-
 <a href="/"> Return To List</a>
+  <h3><%= @vocab.word %></h3>
+    <p><%= @vocab.word_def %></p>
+<button type="click" name="button" class="btn btn-info" id="output-button">Add another definition to this word!</button>
+
+<div id="extra_definition">
+  <form action="/" method="post">
+    <div class="form-group">
+      <label for="extra">Add another definition to your word</label>
+      <input name="extra" class="form-control" >
+    </div>
+  </form>
+</div>
