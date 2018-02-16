@@ -29,4 +29,12 @@ describe('word_definer') do
     expect(Word.all()).to(eq([]))
     end
   end
+
+  describe('find') do
+    it('will find the word to output') do
+      vocab = Word.new(:word => "Apple", :word_def => "pie")
+      vocab.save()
+      expect(Word.find(1)).to(eq(vocab))
+    end
+  end
 end

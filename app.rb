@@ -11,8 +11,13 @@ end
 post('/') do
   word = params["word"]
   word_def = params["word_def"]
-  item = Word.new({:word => word, :word_def => word_def})
-  item.save()
+  thing = Word.new({:word => word, :word_def => word_def})
+  thing.save()
   @list = Word.all()
   erb(:input)
+end
+
+get('/output/') do
+  @list
+  erb(:output)
 end

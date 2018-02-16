@@ -17,8 +17,8 @@
 </div>
 <h2>Your Word List</h2>
 <!-- Ruby things here to take inputs and list them -->
-<% @list.each do |item| %>
-<p><a href="/output/"> <%= item.word %></a> </p>
+<% @list.each do |vocab| %>
+<p><a href="/output/"> <%= vocab.word %></a> </p>
 <% end %>
 <!-- Essentially everything  -->
 <!-- Try @@ first to see if functional -->
