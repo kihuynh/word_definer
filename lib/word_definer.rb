@@ -25,10 +25,12 @@ class Word
     @@list = []
   end
 
-  # def self.find(id)
-  #   vocab_id = id.to_i()
-  #   @@list.each do |word|
-  #     if word.id == vocab_id
-  #       return word
-  # end
+  def self.find(id)
+    vocab_id = id.to_i()
+    @@list.each do |word|
+      if word.id == vocab_id
+        return word
+      end
+    end
+  end
 end
