@@ -34,5 +34,7 @@ class Word
     end
   end
 
+  # def additional
+  # end
 
 end

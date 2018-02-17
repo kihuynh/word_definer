@@ -45,5 +45,7 @@ describe('word_definer') do
     it('it will add additional definition to the word') do
       vocab = Word.new({:word =>"Depressed", :word_def =>"Feeling extra sad"})
       vocab.save()
+      vocab.
+      expect(Word.additional()).to(eq())
     end
 end
