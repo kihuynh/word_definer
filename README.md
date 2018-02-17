@@ -6,7 +6,7 @@
 
 ## Description
 
-Ruby application that allows the user to add a word and it's definition. Kid friendly.
+Ruby application that allows the user to add a word and it's definition. Kid friendly!
 
 ## Setup/Installation Requirements
 
@@ -16,11 +16,12 @@ Run the following command in your terminal to clone on local machine.
 $ git clone https://github.com/kihuynh/word_definer.git
 
 ## To view on Heroku
-put link here
+Visit here!
+https://protected-island-25377.herokuapp.com/
 
 ## Specs
 
-#### Basic Funtionality
+#### Basic Functionality
 1. Save inputted word with definition onto a list
 2. From list. Select word.
 3. Brought to output page with selected word.

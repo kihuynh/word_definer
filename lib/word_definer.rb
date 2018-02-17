@@ -10,7 +10,6 @@ class Word
     @word = attributes.fetch(:word)
     @word_def = attributes.fetch(:word_def)
     @id = @@list.length + 1
-
   end
 
   def self.all
@@ -33,8 +32,4 @@ class Word
       end
     end
   end
-
-  # def additional
-  # end
-
 end
