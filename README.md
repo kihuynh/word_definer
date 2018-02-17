@@ -6,21 +6,24 @@
 
 ## Description
 
-Ruby application that allows the user to add a word and it's definition.
+Ruby application that allows the user to add a word and it's definition. Kid friendly.
 
 ## Setup/Installation Requirements
 
 To clone this repository.
 Open terminal
 Run the following command in your terminal to clone on local machine.
-$ git clone https://github.com/kihuynh/anagrams.git
+$ git clone https://github.com/kihuynh/word_definer.git
 
 ## To view on Heroku
 put link here
 
 ## Specs
 
-1.
+#### Basic Funtionality
+1. Save inputted word with definition onto a list
+2. From list. Select word.
+3. Brought to output page with selected word.
 
 
 ## Technologies Used
